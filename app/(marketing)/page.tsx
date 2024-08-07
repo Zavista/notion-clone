@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       <Button variant={"secondary"} size={"lg"}>
-        Click Me
+        Click Me Hi
       </Button>
     </div>
   );
