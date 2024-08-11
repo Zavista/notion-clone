@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { SignOutButton, useUser } from "@clerk/clerk-react";
 
-const UserItems = () => {
+const UserItem = () => {
   const { user } = useUser();
 
   return (
@@ -68,4 +68,4 @@ const UserItems = () => {
   );
 };
 
-export default UserItems;
+export default UserItem;
