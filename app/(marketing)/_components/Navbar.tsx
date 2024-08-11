@@ -1,6 +1,6 @@
 "use client";
 
-import useScrollTop from "@/hooks/use-scroll-top";
+import useScrollTop from "@/hooks/useScrollTop";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 
