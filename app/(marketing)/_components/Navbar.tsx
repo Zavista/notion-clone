@@ -7,6 +7,7 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 import { useConvexAuth } from "convex/react";
 import { SignInButton } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
+import { Spinner } from "@/components/ui/Spinner";
 
 const Navbar = () => {
   const scrolled = useScrollTop();
@@ -21,7 +22,7 @@ const Navbar = () => {
     >
       <Logo></Logo>
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
-        {isLoading && <p>Loading...</p>}
+        {isLoading && <Spinner></Spinner>}
         {!isAuthenticated && !isLoading && (
           <>
             <SignInButton mode="modal">
